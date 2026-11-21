@@ -1,7 +1,6 @@
 # Board enclosure
 
-Printed parts that hold the main board. They were drawn for v3a; v3a.1 has the same
-outline and mounting holes, so they fit it.
+Printed parts that hold the main board, drawn for the v3a board.
 
 | File | Size (mm) | What it is |
 |---|---|---|
@@ -17,6 +16,5 @@ outline and mounting holes, so they fit it.
 
 ## Before you print
 
-v3a.1 adds the service-reed terminal J20 and two Qwiic sockets that this enclosure was
-not drawn for. Check that their cables have a route out to a cable gland in your
-weatherproof box.
+The reed-switch wires (from J15) and the Qwiic cable to the radar need a route out to a
+cable gland in your weatherproof box. Check that before you print the full base.
