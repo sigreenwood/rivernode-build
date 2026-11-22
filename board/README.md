@@ -72,3 +72,7 @@ charger's absorption voltage to 15.3 V.
 
 The station firmware is not in this repository yet. Get in touch through
 [rivernode.uk](https://rivernode.uk) and we'll help you get a board running.
+
+Once it's running, firmware updates reach the station **over the air**, and a new version
+rolls itself back automatically if it doesn't start cleanly. v3a.2 will stay supported
+alongside RiverNode v5.
