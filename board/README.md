@@ -1,7 +1,7 @@
 # Main board, v3a.2
 
-**The RiverNode board, refined.** v3a.2 keeps every track of v3a, the board that is
-running on the river today, and adds what building it taught us: a screw terminal for
+**The RiverNode board, refined.** v3a.2 keeps every track of v3a, the board already built
+and running, and adds what building it taught us: a screw terminal for
 the service-mode reed switch, a clear 12 V path with nothing to bridge by hand, a marked
 spot for the optional power meter, and corrected labels on every socket.
 

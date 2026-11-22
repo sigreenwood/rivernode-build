@@ -7,7 +7,7 @@ the hardware yourself:
 
 | Folder | What it is | Status |
 |---|---|---|
-| [`board/`](board/) | Main circuit board **v3a.2**: gerbers, board render, schematic, parts list | The tracks of the board running on the river today, refined from building it |
+| [`board/`](board/) | Main circuit board **v3a.2**: gerbers, board render, schematic, parts list | The tracks of the board already built and running, refined from building it |
 | [`enclosure/`](enclosure/) | Printed base, cover and test-fit coupon for the board | Fits v3a and v3a.2 |
 | [`radar-housing/`](radar-housing/) | Under-bridge housing for the SparkFun XM125 water-level radar, version 2 | Printable now |
 
