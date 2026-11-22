@@ -7,15 +7,15 @@ the hardware yourself:
 
 | Folder | What it is | Status |
 |---|---|---|
-| [`board/`](board/) | Main circuit board v3a: gerbers, board render, schematic, parts list, check sheets | **Made and in use.** Has a few known issues that are fixed by hand while building; see the [board notes](board/README.md#known-issues) |
-| [`enclosure/`](enclosure/) | Printed base, cover and test-fit coupon for the board | Drawn for v3a |
+| [`board/`](board/) | Main circuit board **v3a.2**: gerbers, board render, schematic, parts list | The tracks of the board running on the river today, refined from building it |
+| [`enclosure/`](enclosure/) | Printed base, cover and test-fit coupon for the board | Fits v3a and v3a.2 |
 | [`radar-housing/`](radar-housing/) | Under-bridge housing for the SparkFun XM125 water-level radar, version 2 | Printable now |
 
 The full parts list with prices is at [rivernode.uk/bom/](https://rivernode.uk/bom/), and
 help choosing a power set-up for your site is at
 [rivernode.uk/choosing-your-node/](https://rivernode.uk/choosing-your-node/).
 
-![RiverNode v3a board](board/RiverNode_v3a_render.png)
+![RiverNode v3a.2 board](board/RiverNode_v3a2_render.png)
 
 ## Recommended power for year-round monitoring
 
