@@ -5,7 +5,7 @@ proven circuit. Only four modules sit on the board itself: the controller, the 4
 the 5 V supply and the clock. Everything else joins by Qwiic cable, so the soldering is
 simpler, and any sensor swaps in seconds.
 
-![RiverNode v3.5 board](RiverNode_v35_render.png)
+![RiverNode v3.5 board](RiverNode_v3.5_board_2026-11-27.jpg)
 
 ## What's on the board
 
@@ -37,7 +37,7 @@ below).
 | `gerbers/` | Fabrication files for the board maker, plus `FAB_NOTES.txt` |
 | `RiverNode_v3.5_BOM_JLCPCB.csv`, `RiverNode_v3.5_CPL_JLCPCB.csv` | Assembly files, only if you want JLCPCB to fit U3 (LCSC C128634) |
 | `RiverNode_v35_BOM.csv` | Every part on the board, by reference |
-| `RiverNode_v35_render.png` | Picture of the board |
+| `RiverNode_v3.5_board_2026-11-27.jpg`, `RiverNode_v35_render.png` | Pictures of the board |
 | `RiverNode_v35_board.pdf` | Board layout, layer by layer |
 | `RiverNode_v35_schematic.pdf` | Circuit diagram |
 | `FIRST_POWER_UP.pdf` | Step-by-step first power-up, one module at a time, with the readings to expect |

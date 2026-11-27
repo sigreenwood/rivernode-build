@@ -18,7 +18,7 @@ set-up for your site is at
 [rivernode.uk/choosing-your-node/](https://rivernode.uk/choosing-your-node/). Firmware
 updates reach every station over the air, by Wi-Fi or 4G.
 
-![RiverNode v3.5 board](board/RiverNode_v35_render.png)
+![RiverNode v3.5 board](board/RiverNode_v3.5_board_2026-11-27.jpg)
 
 ## Recommended power for year-round monitoring
 
