@@ -11,20 +11,24 @@ spot for the optional power meter, and corrected labels on every socket.
 
 - **ESP32-S3 controller** with Wi-Fi, and Bluetooth for reading the Victron charge controller
 - **4G modem socket** (Waveshare SIM7600G-H) for sites with no Wi-Fi
-- **Real-time clock** (DS3231) that wakes the station on the hour, every hour, in step with
-  the Environment Agency's gauges
-- **microSD card**: every reading is saved locally first, so nothing is lost when the
-  signal drops
+- **Real-time clock** (Adafruit DS3231, STEMMA QT version) that wakes the station on the
+  hour, every hour, in step with the Environment Agency's gauges. Its Qwiic sockets start
+  the sensor chain
+- **Qwiic sensor chain**: the box sensor, the station's card and the power meter each plug
+  in with a Qwiic cable, so there's nothing to solder and any of them swaps in seconds
+- **Its own microSD card** (SparkFun Qwiic OpenLog): every reading is saved locally first,
+  so nothing is lost when the signal drops
 - **Two temperature probe inputs** with surge protection (gas discharge tube, resettable
   fuse and clamp diodes) on every cable that leaves the box
-- **Box climate sensor** socket for temperature, humidity and pressure inside the enclosure
-- **Switched power rails**: the modem, SD card and probes are switched off between readings,
+- **Box climate sensor** (Adafruit SHT45 with a PTFE filter) for temperature and humidity
+  inside the enclosure
+- **Switched power rails**: the modem and probes are switched off between readings,
   so a small solar panel keeps it going all year
 - **Spare GPIO header** for adding sensors later
 
-Every part is through-hole except one small chip (U3), and every module plugs into a
-2.54 mm socket, so it is a comfortable build with a normal soldering iron and any
-module can be swapped in seconds.
+Every part is through-hole except one small chip (U3), the controller, modem and 5 V
+converter plug into 2.54 mm sockets, and the sensors join by Qwiic cable, so it is a
+comfortable build with a normal soldering iron.
 
 | File | What it is |
 |---|---|
@@ -53,14 +57,21 @@ check (DFM) report is free and worth a look before you pay.
 
 ## Building it
 
-- Fit the modules after the rest of the board is soldered: the controller, modem, clock,
-  climate sensor, microSD card and 5 V converter all go into sockets.
+- Fit the modules after the rest of the board is soldered: the controller, modem and 5 V
+  converter go into sockets.
+- **Clock:** solder the Adafruit DS3231 STEMMA QT (5188) straight into MOD2 with its pin
+  header, coin cell (CR1220) facing up. Its pins line up with MOD2's labels. Its two Qwiic
+  sockets are on the underside at each end, edge-mounted, so the cables still plug in
+  from the side.
+- **Qwiic chain:** from the clock, chain the SHT45 box sensor, the Qwiic OpenLog (with a
+  microSD card in it) and, if fitted, the power meter, in any order. **MOD1 and J4 stay
+  empty**: they are for the older plug-in climate sensor and SPI card module, which the
+  firmware still supports.
 - **Service-mode reed switch:** two wires to J20 (REED and GND). Hold a magnet against
   the box and the station opens its own Wi-Fi set-up page on your phone.
 - **Power meter (optional):** an Adafruit INA228 measures what the whole station draws.
   It sits on foam tape in the marked area, wired into the 12 V feed as printed there
-  (VIN+ from the fuse, VIN− to J1 +, VBUS to VIN−), and joins the sensor bus with a Qwiic
-  cable.
+  (VIN+ from the fuse, VIN− to J1 +, VBUS to VIN−), and joins the Qwiic chain.
 - **Long probe cables:** if they give 1-Wire errors, fit the jumper J11 for a stronger pull-up.
 
 **Sodium-ion batteries.** The input surge protector D1 is rated to 15.3 V continuous.
