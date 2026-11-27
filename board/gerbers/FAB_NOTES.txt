@@ -36,8 +36,7 @@ FILES
 311 vias (9 signal, 302 ground stitching).
 
 BEFORE PAYING
-1. Check J3's 35.56 mm row spacing on FIT_CHECK_1to1.pdf (still unmeasured).
-2. Upload these and read the fab's own DFM report. It checks things no desktop tool
-   does: annular ring against their real process, copper slivers, acid traps, mask
-   slivers, legend over pads. It is free and it is the only genuinely independent
-   check on this design.
+Upload these and read the fab's own DFM report. It checks things no desktop tool
+does: annular ring against their real process, copper slivers, acid traps, mask
+slivers, legend over pads. It is free and it is the only genuinely independent
+check on this design.
