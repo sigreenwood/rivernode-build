@@ -1,0 +1,42 @@
+RiverNode v3a.2  -  fabrication notes
+=====================================
+
+Board            182.0 x 136.0 mm, rectangular, 4x M3 mounting holes
+Layers           2
+Thickness        1.6 mm
+Copper weight    1 oz  (35 um)  -- NOT optional, see below
+Surface finish   HASL is fine
+Mask / legend    any colour, legend on BOTH sides
+Min track        0.30 mm
+Min clearance    0.25 mm (0.40 mm on the 12 V and probe nets)
+Min drill        0.30 mm
+Min annular ring 0.15 mm
+
+v3a.2 is v3a, the board that has been made and run, with its tracks kept as
+they were. Changes: the INA226 socket MOD3 is gone and its 12 V pins are joined
+in copper; a service-reed terminal J20 is added; silkscreen corrected.
+
+WHY 1 oz MATTERS
+The 12 V path from J1 through Q1, J12 and Q4 to the modem is routed at 1.5 mm
+because the modem pulls up to 2.2 A in transmit bursts. That width assumes 1 oz
+outer copper. On 0.5 oz the same trace is undersized and will run hot.
+
+SURFACE-MOUNT PARTS
+U3 (SOT-23-6) only. Everything else is through-hole.
+
+FILES
+  RiverNode_v3a2-F_Cu.gtl / -B_Cu.gbl          copper
+  RiverNode_v3a2-F_Mask.gts / -B_Mask.gbs      solder mask
+  RiverNode_v3a2-F_Silkscreen.gto / -B_Silkscreen.gbo   legend
+  RiverNode_v3a2-F_Paste.gtp                   top paste (not needed for a bare board)
+  RiverNode_v3a2-Edge_Cuts.gm1                 outline
+  RiverNode_v3a2.drl                           drill, Excellon, mm
+  RiverNode_v3a2-drl_map.gbr                   drill map
+  RiverNode_v3a2-job.gbrjob                    job file
+
+551 holes across 12 tools.
+
+BEFORE PAYING
+Upload these and read the fab's own DFM report. It checks things no desktop
+tool does: annular ring against their real process, slivers, acid traps, mask
+slivers, legend over pads.

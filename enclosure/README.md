@@ -1,7 +1,7 @@
 # Board enclosure
 
-Printed parts that hold the main board. They fit v3a and v3a.2, which share the same
-outline and mounting holes.
+Printed parts that hold the main board. They fit v3.5, v3a and v3a.2, which share the
+same outline and mounting holes.
 
 | File | Size (mm) | What it is |
 |---|---|---|
@@ -14,5 +14,5 @@ outline and mounting holes.
 - Needs a print bed of at least 200 × 145 mm for the base and cover.
 - Use **PETG or ASA, not PLA.** PLA softens at about 55 °C, which the inside of a box in
   summer sun can reach.
-- Plan where the reed-switch wires (J20) and any Qwiic cable to the radar leave for the
+- Plan where the reed-switch wires (J20), the probe cables, the earth wire and any Qwiic cable to the radar leave for the
   cable gland in your weatherproof box.
